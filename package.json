@@ -1,0 +1,41 @@
+{
+  "name": "trending-hub",
+  "version": "1.0.0",
+  "description": "A chrome extension collects many trending list, such as toutiao, tiktok, zhihu...",
+  "main": "popup.html",
+  "type": "module",
+  "devDependencies": {
+    "vite": "^6.2.6",
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-static-copy": "^2.3.1"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvxiao/trending-hub.git"
+  },
+  "keywords": [
+    "trending",
+    "list",
+    "news",
+    "collections",
+    "chrome",
+    "extension"
+  ],
+  "author": "jvxiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jvxiao/trending-hub/issues"
+  },
+  "homepage": "https://github.com/jvxiao/trending-hub#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "vite-plugin-html": "^3.2.2"
+  }
+}
