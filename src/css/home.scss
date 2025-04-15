@@ -1,0 +1,21 @@
+
+
+.nav-bar {
+  line-height: 26px;
+  margin-bottom: 6px;
+  a {
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    text-decoration: none;
+    &:visited {
+      color: #333;
+    }
+    &.active {
+      color: greenyellow;
+      font-weight: 600;
+    }
+  }
+  
+}
+
