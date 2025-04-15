@@ -5,13 +5,14 @@
   "main": "popup.html",
   "type": "module",
   "devDependencies": {
+    "sass-embedded": "^1.86.3",
     "vite": "^6.2.6",
     "vite-plugin-copy": "^0.1.6",
     "vite-plugin-static-copy": "^2.3.1"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,8 +35,10 @@
   "homepage": "https://github.com/jvxiao/trending-hub#readme",
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "axios": "^1.8.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^6.30.0",
     "vite-plugin-html": "^3.2.2"
   }
 }
