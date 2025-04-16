@@ -35,6 +35,7 @@
   "homepage": "https://github.com/jvxiao/trending-hub#readme",
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "antd": "^5.24.7",
     "axios": "^1.8.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

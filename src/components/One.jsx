@@ -23,7 +23,7 @@ export const One = ()=> {
 
   return (
     <div className='one-class'>
-    <img src={yunlongImg}  style={{width: '300px', borderRadius: '6px', margin: '4px'}}/>
+    <img src={yunlongImg}  style={{width: '290px',height: '203px', borderRadius: '6px', margin: '4px'}}/>
     <p>{data}</p>
     </div>
   )
