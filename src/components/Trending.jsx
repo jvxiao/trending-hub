@@ -62,7 +62,7 @@ export const NewList = (props) => {
     <>
       <div className="list">
         { list.map((item) => {
-          return <p className="list-item">{item.title}</p>
+          return <p className="list-item"><a href={item.url} target="_blank">{item.title}</a></p>
         }) }
       </div>
     </>
