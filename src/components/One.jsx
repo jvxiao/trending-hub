@@ -1,8 +1,9 @@
 import axios from 'axios';
-import yunlongImg from '../assets/yun-long.jpeg';
+// import yunlongImg from '../assets/yun-long.jpeg';
 import { useEffect, useState } from 'react';
 const url = 'https://v1.hitokoto.cn';
 
+const yunlongImg = 'https://cdn.seovx.com/img/momcn19-9%20(98).jpg'
 export const One = ()=> {
   const [data, setData] = useState('');
   const params = {
@@ -22,9 +23,10 @@ export const One = ()=> {
   }, [])
 
   return (
-    <div className='one-class'>
-    <img src={yunlongImg}  style={{width: '290px',height: '203px', borderRadius: '6px', margin: '4px'}}/>
-    <p>{data}</p>
+    <div className='one-class' style={{width: '100%',height: '203px'}}>
+      <a  href={yunlongImg}> <img src={yunlongImg} /></a>
+      <div className="marker"></div>
+      <p>{data}</p>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import './css/home.scss';
 
 ReactDOM.createRoot(document.getElementById('app')).render(
   <div>
-    <h2> 🚀 Hello, Trending Hub ! </h2>
+    {/* <h2> 🚀 Hello, Trending Hub ! </h2> */}
     <Router>
       <One />
       <Navigator />
