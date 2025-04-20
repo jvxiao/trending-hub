@@ -6,6 +6,7 @@ const url = 'https://v1.hitokoto.cn';
 const yunlongImg = 'https://cdn.seovx.com/img/momcn19-9%20(98).jpg'
 export const One = ()=> {
   const [data, setData] = useState('');
+  const [timmer, setTimmer] = useState(null);
   const params = {
     c: 'd',
     encode: 'json',
@@ -20,6 +21,10 @@ export const One = ()=> {
       setData(res.data.hitokoto)
     }
     getOne()
+    if(timmer) clearInterval(timmer);
+    setTimmer(setInterval(() => {
+      getOne()
+    }, 15000))
   }, [])
 
   return (
