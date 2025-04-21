@@ -46,7 +46,6 @@ export const Trending = (props) => {
   }, [])
 
   const slices = chunkArray(data, parseInt(step))
-  console.log(slices)
   return(
     <Carousel autoplay="true" >
       { slices.map(list => {
