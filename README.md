@@ -9,6 +9,6 @@
   - Automaticly update content, release you hands
 
 ## exapmle
-<div align="center" style="width:360px">
-  <img src="./src/assets/example.png" >
+<div >
+  <img src="./src/assets/example.png" style="width:360px">
 </div>
