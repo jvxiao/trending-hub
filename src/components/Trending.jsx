@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import { Carousel, List } from 'antd'
+import { Carousel } from 'antd'
 import { getTrending } from '../apis/trending'
 
 

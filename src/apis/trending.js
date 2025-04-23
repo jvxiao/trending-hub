@@ -1,6 +1,6 @@
 import axios from "axios";
-// const BASE_URL = 'https://trending-server.onrender.com/api/trending'
-const BASE_URL = 'http://localhost:5000/api/trending'
+const BASE_URL = 'https://trending-server.onrender.com/api'
+
 /**
  * 
  * @param {*} type  'weibo', 'zhihu', 'douyin', 'toutiao' 
@@ -9,7 +9,7 @@ const BASE_URL = 'http://localhost:5000/api/trending'
 export const getTrending =  (type = '') => {
   return new Promise(async (resolve, reject) => {
     try {
-      const res = await axios.get(`${BASE_URL}/${type}`);
+      const res = await axios.get(`${BASE_URL}/trending/${type}`);
       resolve(res.data || [])
     }catch(err) {
       reject(err)
@@ -21,7 +21,7 @@ export const getTrending =  (type = '') => {
 export const getRandomImage = async () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const res = await axios.get('http://localhost:5000/api/utils/randomImage')
+      const res = await axios.get(`${BASE_URL}/utils/randomImage`)
       resolve(res.data)
     }catch(err) {
       reject(err)
