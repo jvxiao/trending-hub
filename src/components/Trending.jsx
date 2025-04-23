@@ -47,7 +47,7 @@ export const Trending = (props) => {
 
   const slices = chunkArray(data, parseInt(step))
   return(
-    <Carousel autoplay="true" >
+    <Carousel autoplay="true" autoplaySpeed={15000}>
       { slices.map(list => {
         return <NewList list={list}></NewList>
       })}
