@@ -2,9 +2,7 @@
 import { useEffect, useState } from "react"
 import { Carousel, List } from 'antd'
 import { getTrending } from '../apis/trending'
-const TrendingList = () => {
 
-}
 
 export const ZhihuTrending = () => {
  return <Trending type='zhihu' step='5' />
@@ -12,12 +10,10 @@ export const ZhihuTrending = () => {
 
 export const ToutiaoTrending = () => {
   return <Trending type='toutiao' step='10' />
-  return 'toutiao'
 }
 
 export const WeiboTrending = () => {
   return <Trending type='weibo' step='10' />
-  return 'weibo'
 }
 
 export const DouyinTrending = () => {
