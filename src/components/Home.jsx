@@ -8,8 +8,7 @@ export function HomePage() {
   React.useEffect(() => {
     navigate('/zhihu', { replace: true })
   }, [navigate])
-
-  return <div>Redirecting to About...</div>
+  // return <div>Redirecting to About...</div>
 }
 
 export function Navigator() {
