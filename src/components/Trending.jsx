@@ -44,8 +44,8 @@ export const Trending = (props) => {
   const slices = chunkArray(data, parseInt(step))
   return(
     <Carousel autoplay="true" autoplaySpeed={15000}>
-      { slices.map(list => {
-        return <NewList list={list}></NewList>
+      { slices.map((list, ind) => {
+        return <NewList list={list} key={ind}></NewList>
       })}
     </Carousel>
   )
@@ -56,8 +56,8 @@ export const NewList = (props) => {
   return (
     <>
       <div className="list">
-        { list.map((item) => {
-          return <p className="list-item"><a href={item.url} target="_blank">{item.title}</a></p>
+        { list.map((item, ind) => {
+          return <p className="list-item" key={ind}><a href={item.url} target="_blank">{item.title}</a></p>
         }) }
       </div>
     </>
