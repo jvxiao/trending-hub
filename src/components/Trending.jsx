@@ -67,3 +67,10 @@ export const NewList = (props) => {
     </>
   )
 } 
+
+export const TrendingMap = {
+  '/zhihu': <ZhihuTrending />,
+  '/toutiao': <ToutiaoTrending />,
+  '/weibo': <WeiboTrending />,
+  '/douyin': <DouyinTrending />
+}

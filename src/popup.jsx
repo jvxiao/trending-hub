@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from 'react-dom/client'
-import { ZhihuTrending, ToutiaoTrending, WeiboTrending, DouyinTrending} from "./components/Trending";
+import {TrendingMap} from "./components/Trending";
 import { HomePage, Navigator } from "./components/Home";
 import { One } from './components/One'
-import {BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './css/home.scss';
 
 const App = () => {
@@ -12,11 +12,12 @@ const App = () => {
     <One />
     <Navigator />
     <Routes>
-      <Route path="/" element={<HomePage/>} />
-      <Route path="/zhihu" element={<ZhihuTrending />}></Route>
-      <Route path="/toutiao" element={<ToutiaoTrending />}></Route>
-      <Route path="/douyin" element={<DouyinTrending />}></Route>
-      <Route path="/weibo" element={<WeiboTrending />}></Route>
+      {
+        Object.entries(TrendingMap).map(item => {
+          const [path, component] = item;
+          return <Route path={path} element={component} />
+        })
+      }
       <Route path="*" element={<HomePage/>} />
     </Routes>
   </Router>
