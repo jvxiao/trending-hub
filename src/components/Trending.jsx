@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { Carousel } from 'antd'
 import { getTrending } from '../apis/trending'
-
+import { FireOutlined } from '@ant-design/icons'
 
 export const ZhihuTrending = () => {
  return <Trending type='zhihu' step='5' />
@@ -45,19 +45,23 @@ export const Trending = (props) => {
   return(
     <Carousel autoplay="true" autoplaySpeed={15000}>
       { slices.map((list, ind) => {
-        return <NewList list={list} key={ind}></NewList>
+        return <NewList list={list} key={ind} showHot={ind === 0}></NewList>
       })}
     </Carousel>
   )
 }
 
 export const NewList = (props) => {
-  const { list } = props;
+  const { list, showHot=false } = props;
   return (
     <>
       <div className="list">
         { list.map((item, ind) => {
-          return <p className="list-item" key={ind}><a href={item.url} target="_blank">{item.title}</a></p>
+          return (
+          <p className="list-item" key={ind}>
+            <a href={item.url} target="_blank">{item.title}</a>
+            { ind < 3 && showHot ? <FireOutlined type="file-text"  style={{ fontSize: '14px', color: '#ff6633', marginLeft: '4px' }}/> : ''}
+            </p>)
         }) }
       </div>
     </>
