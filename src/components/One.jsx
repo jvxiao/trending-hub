@@ -5,7 +5,7 @@ import { getRandomImage } from '../apis/trending';
 import { AppstoreOutlined } from '@ant-design/icons'
 const url = 'https://v1.hitokoto.cn';
 
-const yunlongImg = 'https://cdn.seovx.com/img/momcn19-9%20(98).jpg'
+const yunlongImg = 'https://cdn.seovx.com/img/mom-19-7%20(204).jpg'
 
 const toHDImg = (url) => {
   window.open(url, '_blank');
