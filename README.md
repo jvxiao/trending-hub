@@ -9,6 +9,7 @@
   - Automaticly update content, release you hands
 
 ## exapmle
-<div >
+<div style="display:flex;">
+  <img src="./src/assets/example2.png" style="width:360px;margin: 0 8px;" >
   <img src="./src/assets/example.png" style="width:360px">
 </div>
