@@ -10,7 +10,7 @@ import { createContext, useContext } from "react";
 const ModeContext = createContext("entertainment");
 
 const App = () => {
-  const [mode, setMode] = useContext("ent");
+  const [mode, setMode] = useContext(ModeContext);
   return (
     <ModeContext.Provider values={{ mode, setMode }}>
       <Router>

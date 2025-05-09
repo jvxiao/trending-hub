@@ -54,6 +54,14 @@
     position: relative;
     top: calc(-100% - 4px)
   }
+
+  .tool {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 3000;
+  }
 }
 
 .list {

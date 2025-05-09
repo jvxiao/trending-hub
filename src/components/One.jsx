@@ -2,6 +2,7 @@ import axios from 'axios';
 // import yunlongImg from '../assets/yun-long.jpeg';
 import { useEffect, useState } from 'react';
 import { getRandomImage } from '../apis/trending';
+import { ToolFilled, ToolOutlined, MenuOutlined, AppstoreOutlined } from '@ant-design/icons'
 const url = 'https://v1.hitokoto.cn';
 
 const yunlongImg = 'https://cdn.seovx.com/img/momcn19-9%20(98).jpg'
@@ -51,6 +52,7 @@ export const One = ()=> {
   return (
     <div className='one-class' style={{width: '100%',height: '203px'}} onClick={() => { toHDImg(imgUrl)}}>
       <img src={imgUrl} />
+      <AppstoreOutlined className='tool' style={{ fontSize: '14px', color: '#fff', marginLeft: '4px' }}/>
       <div className="marker"></div>
       <p>{data}</p>
     </div>
