@@ -2,7 +2,7 @@ import axios from 'axios';
 // import yunlongImg from '../assets/yun-long.jpeg';
 import { useEffect, useState } from 'react';
 import { getRandomImage } from '../apis/trending';
-import { ToolFilled, ToolOutlined, MenuOutlined, AppstoreOutlined } from '@ant-design/icons'
+import { AppstoreOutlined } from '@ant-design/icons'
 const url = 'https://v1.hitokoto.cn';
 
 const yunlongImg = 'https://cdn.seovx.com/img/momcn19-9%20(98).jpg'
